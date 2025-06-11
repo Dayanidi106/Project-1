@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Stencil:opsz,wght@10..72,100..900&display=swap"
+        rel="stylesheet">
+</head>
+<style>
+    .right,
+    h3,
+    h4,
+    ul,
+    li {
+        display: inline;
+        padding: 10px;
+        position: sticky;
+        top: 0px;
+
+    }
+
+    body {
+        font-family: "Big Shoulders Stencil", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 200;
+        font-style: normal;
+    }
+
+    .don {
+        display: flex;
+        flex: wrap;
+    }
+
+    .right {
+        float: right;
+    }
+
+    h4 {
+        font-variant: small-caps;
+    }
+
+    li:hover {
+        background-color: gray;
+        color: black;
+        cursor: pointer;
+    }
+
+    h3,
+    h4:hover {
+        background-color: gray;
+        color: black;
+        cursor: pointer;
+    }
+
+    h1,
+    h2 {
+        display: inline;
+    }
+
+    .relative {
+        position: relative;
+        opacity: 0.9;
+        top: -70px;
+    }
+
+    .absolute {
+        position: absolute;
+        color: red;
+        top: 50%;
+        right: 40%;
+        font-size: large;
+    }
+
+    .space {
+        padding-top: 5%;
+    }
+
+    img {
+        padding-top: 70px;
+    }
+
+    .home {
+        position: relative;
+        opacity: 1px;
+    }
+
+    .home1 {
+        position: absolute;
+        top: 27%;
+        color: white;
+        background-color: black;
+    }
+
+    .brick {
+        position: relative;
+        opacity: 1px;
+        left: 1%;
+    }
+
+    .home2 {
+        position: absolute;
+        top: 27%;
+        color: white;
+        background-color: black;
+    }
+
+    .reno {
+        position: relative;
+        opacity: 1px;
+        left: 2%;
+    }
+
+    .home3 {
+        position: absolute;
+        top: 27%;
+        color: white;
+        background-color: black;
+    }
+
+    .barn {
+        position: relative;
+        opacity: 1px;
+        left: 3%;
+    }
+
+    .home4 {
+        position: absolute;
+        top: 26%;
+        color: white;
+        background-color: black;
+    }
+
+    .gym {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .phone {
+        position: relative;
+        opacity: 1px;
+    }
+
+    .home5 {
+        position: absolute;
+        top: 26%;
+        color: white;
+        background-color: black;
+    }
+
+    .phone1 {
+        position: relative;
+        opacity: 1px;
+        left: 1%;
+    }
+
+    .home6 {
+        position: absolute;
+        top: 26%;
+        color: white;
+        background-color: black;
+    }
+
+    .phone2 {
+        position: relative;
+        opacity: 1px;
+        left: 2%;
+    }
+
+    .home7 {
+        position: absolute;
+        top: 26%;
+        color: white;
+        background-color: black;
+    }
+
+    .phone3 {
+        position: relative;
+        opacity: 1px;
+        left: 3%;
+    }
+
+    .home8 {
+        position: absolute;
+        top: 27%;
+        color: white;
+        background-color: black;
+    }
+
+    .space1 {
+        padding-top: 4%;
+    }
+
+    .gap {
+        padding-top: 2%;
+    }
+
+    .pack {
+        color: black;
+        height: 300px;
+        width: 300px;
+    }
+
+    .anu:hover {
+        background-color: gray;
+        color: black;
+        cursor: pointer;
+        padding: 10px;
+    }
+
+    .anu {
+        background-color: rgba(238, 228, 228, 0.877);
+        padding: 10px;
+    }
+
+    .pack {
+        display: flex;
+        flex: wrap;
+    }
+
+    .pack1 {
+        padding-left: 20px;
+    }
+
+    .anu1:hover {
+        background-color: gray;
+        color: black;
+        cursor: pointer;
+        padding: 10px;
+    }
+
+    .anu1 {
+        background-color: rgba(238, 228, 228, 0.877);
+        padding: 10px;
+    }
+
+    .pack2 {
+        padding-left: 20px;
+    }
+
+    .anu2:hover {
+        background-color: gray;
+        color: black;
+        cursor: pointer;
+        padding: 10px;
+    }
+
+    .anu2 {
+        background-color: rgba(238, 228, 228, 0.877);
+        padding: 10px;
+    }
+
+    .pack3 {
+        padding-left: 15px;
+    }
+
+    .anu3:hover {
+        background-color: gray;
+        color: black;
+        cursor: pointer;
+        padding: 10px;
+    }
+
+    .anu3 {
+        background-color: rgba(238, 228, 228, 0.877);
+        padding: 10px;
+    }
+
+    .fox {
+        position:sticky;
+        top: 0px;
+        background-color: white;
+    }
+
+    .none {
+        background-color: white;
+    }
+
+    .wrap2 {
+        display: flex;
+    }
+
+    .mom {
+        padding-top: 20%;
+    }
+
+    .name {
+        padding: 5px;
+    }
+
+    /* .dot {
+        margin: 20px;
+        width: 100%;
+        height: 10px;
+    } */
+    .bordor{
+        width:100%;
+        height:15%;
+        border:solid 1px;
+        padding:10px;
+    }
+    .click:hover{
+        background-color:gray;
+        
+    }
+    .click{
+        color:black;
+        padding:10px;
+        margin-top: 16px;
+         margin-bottom: 16px;
+    }
+    .last{
+        background-color: black;
+        color: white;
+        padding:30px;
+    }
+    
+    
+    @media screen and (max-width:1000px){
+        .wrap2{
+            display: flex;
+            flex-wrap:wrap;
+            justify-content:center;
+        }
+    }
+        @media screen and (max-width:1000px){
+        .don{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        }
+        @media screen and (max-width:1000px){
+        .gym{
+            display:flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        }     
+        @media screen and (max-width:1000px) {
+        .space{
+            display:flex;
+            justify-content: center;
+        }
+        }
+        @media screen and (max-width:1000px){
+        .win{
+            display:flex;
+            flex-wrap: wrap;
+            justify-content:space-evenly;
+        }
+        }
+</style>
+
+<body>
+    <div class="fox">
+        <h3 class="none">Br</h3>
+        <h4>Architects</h4>
+        <div class="right">
+            <ul>
+                <li>Projects</li>
+                <li>About</li>
+                <li>Contact</li>
+            </ul>
+        </div>
+    </div>
+<div class="win">
+    <div class="relative">
+        <img src="image/arch.jpg" height="100%" width="100%">
+    </div>
+    <div class="absolute">
+        <h1>BR</h1>
+        <h2>Architects</h2>
+    </div>
+</div>
+    <div class="space">
+        <h4><i>Projects</i></h4>
+    </div>
+    <div class="don">
+        <div class="home">
+            <img src="image/house1.jpg" width="300px" height="190px">
+            <div class="home1">
+                <p>Summer House</p>
+            </div>
+        </div>
+        <div class="brick">
+            <img src="image/house2.jpg" width="300px" height="190px">
+            <div class="home2">
+                <p>Brick House</p>
+            </div>
+        </div>
+        <div class="reno">
+            <img src="image/reno.jpg" width="300px" height="190px">
+            <div class="home3">
+                <p>Renovated</p>
+            </div>
+        </div>
+        <div class="barn">
+            <img src="image/bar.jpg" width="300px" height="190px">
+            <div class="home4">
+                <p>Barn House</p>
+            </div>
+        </div>
+    </div>
+    <div class="gym">
+        <div class="phone">
+            <img src="image/home5.jpg" width="300px" height="190px">
+            <div class="home5">
+                <p>Summer House</p>
+            </div>
+        </div>
+        <div class="phone1">
+            <img src="image/house6.jpg" width="300px" height="190px">
+            <div class="home6">
+                <p>Brick House</p>
+            </div>
+        </div>
+        <div class="phone2">
+            <img src="image/house7.jpg" width="300px" height="190px">
+            <div class="home7">
+                <p>Renovated</p>
+            </div>
+        </div>
+        <div class="phone3">
+            <img src="image/8 home.jpg" width="300px" height="190px">
+            <div class="home8">
+                <p>Barn House</p>
+            </div>
+        </div>
+    </div>
+    <div class="space1">
+        <p>About</p>
+        <p class="gap">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minus voluptates, illum magnam aut
+            dignissimos consequatur adipisci est debitis animi magni doloribus ex hic ullam pariatur excepturi delectus
+            cupiditate quia obcaecati voluptatibus distinctio molestiae ab. Tempore maxime ipsam laboriosam facere, eos
+            recusandae. Suscipit explicabo architecto minus tenetur qui dolor fugiat corrupti vel aliquid. Neque unde
+            corporis odit soluta minima voluptates adipisci officiis tenetur sed omnis, ducimus consequatur impedit
+            eligendi sint ipsum? Consequatur dolorem, saepe reprehenderit ducimus quasi qui laudantium deleniti quas
+            suscipit ad corporis obcaecati eum esse, nihil vitae alias! Officiis omnis rerum expedita recusandae error
+            ad assumenda enim maiores dolor?</p>
+    </div>
+    <div class=" wrap2">
+        <div>
+            <img src="image/john.jpg" width="300px" height="190px">
+            <h5>John Doe</h5>
+            <h6>CEO & Founder</h6>
+            <p>John Deo was the spoke person for the company and a leadiing company in India.He is the top 10 richest
+                person in India.</p>
+            <center>
+                <p class="anu">Contact</p>
+            </center>
+        </div>
+       
+            <div class="pack1">
+                <img src="image/jane.jpg" width="300px" height="190px">
+                <h5>Jane Doe</h5>
+                <h6>Architect</h6>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elero cumque. Similique, praesentium.Daya will
+                    win.Definitely but not now</p>
+                <center>
+                    <P class="anu1">Contact</P>
+                </center>
+            </div>
+            <div class="pack2">
+                <img src="image/mike.jpg" width="300px" height="190px">
+                <h5>Mike Ross</h5>
+                <h6>Architect</h6>
+                <p> Mike Rosswas the spoke person for the company and a leadiing company in India.He is the top 10
+                    richest person in India.</p>
+                <center>
+                    <p class="anu2">Contact</p>
+                </center>
+            </div>
+            <div class="pack3">
+                <img src="image/dan.jpg" width="300px" height="190px">
+                <h5>Dan Star</h5>
+                <h6>Architect</h6>
+                <p> Dan Star the spoke person for the company and a leadiing company in India.He is the top 10 richest
+                    person in India.lero cumque. Similique, praesentium.Daya will</p>
+                <center>
+                    <p class="anu3">Contact</p>
+                </center>
+            </div>
+    </div><br><br>
+    <div class="bottle">
+    <div class="bag">
+        <h4>Contact</h4><br><br><br><hr><br>
+        <p>Lets get in touch and talk about your next project.</p>
+        <form action="">
+            <P>
+                <input class="bordor" type="text" placeholder="Name" required name="Name">
+            </P>
+            <P>
+                <input class="bordor" type="text" placeholder="Email" required name="Email" width="100%" height="10%">
+            </P>
+            <P>
+                <input class="bordor" type="text" placeholder="Subject" required name="Subject" width="100%" height="10%">
+            </P>
+            <P>
+                <input class="bordor" type="text" placeholder="Comment" required name="Comment" width="100%" height="10%">
+            </P>
+         </form>
+    </div>
+    </div><br>
+    <div>
+        <button class="click">SEND MESSAGE</button>
+    </div>
+    <div>
+        <img src="image/map.jpg" height="100%" width="100%">
+    </div><br>
+    <div class="last">
+    <center>
+        <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp">W3.css</a></p>
+    </center>
+    </div>
+</body>
+
+</html>
